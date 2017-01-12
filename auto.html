@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>card view</title>
+        <link rel="icon" href="favicon.ico">
+        <!--Import Google Icon Font-->
+        <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.css" rel="stylesheet">-->
+        <link href="css/auto.css" rel="stylesheet" type="text/css">
+         <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+        <script type="text/javascript" src="js/auto.js"></script>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+
+<div class="row">
+  <div class="input-field col s2">
+    <label class="active">State</label>
+    <input type="text" id="autocompleteState" placeholder="autocomplete inputFields[1]" class="autocomplete inputFields" >
+
+  </div>
+</div>
+
+
+<script>
+  var stateData = [{
+    value: "Alabama"
+  }, {
+    value: "Alaska"
+  }, {
+    value: "Arizona"
+  }, {
+    value: "Arkansas"
+  }, {
+    value: "California"
+  }, {
+    value: "Colorado"
+  }, {
+    value: "Connecticut"
+  }, {
+    value: "District of Columbia"
+  }, {
+    value: "Delaware"
+  }, {
+    value: "Florida"
+  }, {
+    value: "Georgia"
+  }, {
+    value: "Hawaii"
+  }, {
+    value: "Idaho"
+  }, {
+    value: "Illinois"
+  }, {
+    value: "Indiana"
+  }, {
+    value: "Iowa"
+  }, {
+    value: "Kansas"
+  }, {
+    value: "Kentucky"
+  }, {
+    value: "Louisiana"
+  }, {
+    value: "Maine"
+  }, ];
+
+  $('#autocompleteState').data('array', stateData);
+
+</script>
+
+<!-- end snippet -->
+
+
+
+
+
+
+ <!--Import jQuery before materialize.js-->
+       
+    </body>
+</html>

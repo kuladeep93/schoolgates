@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2016, 11:20:58 AM
+    Author     : KULADEEP
+*/
+
+body{
+    background-color: #fff;
+}
+.wdth20{
+    width: 20px;
+}
+.mrgntp-20{
+    margin-top: -20px;
+}
+.mrglt-10{
+    margin-left: -10px;
+}
+.pdng0{
+    padding: 0px;
+}
+.pdng5{
+    padding: 5px;
+}
+.mrgtp-5{
+    margin-top: -5px;
+}
+.pdnglt10{
+    padding-left: 10px;
+}
+.fnt18{
+    font-size: 18px;
+    color: #4A8BF5;
+}
+.fnt20{
+    color: #4A8BF5;
+    font-size: 20px;
+}
+.clrprim{
+    color: #4A8BF5;
+}
+.bgclrprim{
+    background-color: #4A8BF5;
+}
+.bgclrsec{
+    background-color: #090;
+}
+.clrsec{
+    color: #090;
+}
+.icon {
+    margin-top: -10px;
+    background-color: transparent;
+    width: 37px;
+    height: 30px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 6px;
+    color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+}
+.icon:hover{
+    border: #fff;
+    transform: scale(2.0);
+    transition: all 0.3s;
+    color: #4A8BF5;
+}
+.progress-bar-striped, .progress-striped .progress-bar{
+    background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 40px 40px;
+}
+.progress-bar {
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    line-height: 17px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress {
+    height: 17px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.fill {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.zoomimg {
+    position: relative;
+    overflow: hidden;
+}
+.zoomimg img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.zoomimg:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.lnk{
+    cursor: pointer; 
+}
+.image-box{
+    width:100%;
+    overflow:hidden;
+    height: 220px;
+}
+.image {
+    background-size: 100% 100%;
+    height:220px;
+    background-position:center;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+} 
+.image:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1); /* IE 9 */
+} 
+.gradimg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.005),rgba(0,0,0,0),rgba(0,0,0,0.09),rgba(0,0,0,1));
+    opacity: 1.2; 
+}
+.gradimg:before {
+    content: '';
+    position: absolute;
+    top: 0px;;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 220px;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.005),rgba(0,0,0,0),rgba(0,0,0,0.05),rgba(0,0,0,1));
+    opacity: 0.7; 
+}
+.image-box .fnt20{
+    color: #fff;
+}
+#data{
+    padding: 10px;
+}
+#institution tr td{
+    padding:0px;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .icon {
+        zoom: 1.2;
+        margin-top: 10px;
+        width: 37px;
+        height: 30px;
+        color: white;
+        vertical-align: middle;
+        text-align: center;
+        padding-top: 7px;
+        color: #4A8BF5;
+        border: 1px solid #4A8BF5;
+    }
+    .slip{
+        margin: 10px 0px;
+        color: #4A8BF5;
+        box-shadow: 2px 0px 5px #d9d9d9;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .image-box{
+        width:100%;
+        overflow:hidden;
+        height: 220px;
+    }
+    .image {
+        background-size: 100% 100%;
+        height:220px;
+        background-position:center;
+    } 
+    .image:hover {
+        transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none; /* IE 9 */
+    }
+    #data{
+        padding: 0px;
+    }
+}

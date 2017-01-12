@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 5, 2016, 3:29:11 AM
+    Author     : KULADEEP
+*/
+.bgclrprim{
+    background-color: #4A8BF5;
+}
+.navbar-fixed{
+    height: 50px;
+}
+nav{
+    height: 50px;
+}
+nav ul li{
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    height: 50px;
+}
+.pdng0-10{
+    padding: 0px 0px 0px 10px;
+}
+nav ul li a{
+    height: 50px;
+}
+a:hover{
+    text-decoration: none;
+    color: #d6d6d6;
+}
+nav ul ul {
+    background: #fff;
+    color: #4A8BF5;
+    text-align: center;
+    display:none;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    height: 140px;
+    left: 0px;
+    line-height: 0px;
+    box-shadow: 0px 5px 7px #888888;
+    border-bottom: 2px solid #23337D;
+}
+nav ul ul div{
+    margin: 40px  0px;
+}
+.select-wrapper{
+    top: 10px;
+}
+.select-wrapper span.caret{
+    display: none;
+}
+.select-wrapper input.select-dropdown{
+    border-bottom: 0px;
+}
+.search_bar input[type='text'] {
+    border: #b7b7b7 solid 1px;
+    height: 2.5rem;
+    padding-left: 4px;
+}
+.search_bar input[type=text]:focus {
+    border-bottom: 0px;
+}
+.search_bar button[type=submit] {
+    background-color: #4A8BF5;
+    color: #fff;;
+    border:0px;
+    width: 15%;
+    position: absolute;
+    top: 0px;
+    right: 9px;
+    bottom: 15px;
+    margin: 0;
+}
+.advsearch .input-field{
+    padding-left: 10px;
+    margin-top: 0px;
+}
+.advsearch .input-field input[type=text]{
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0px 0 0 #fff;
+    height: 1.5rem;
+    color: #000;
+    margin: 8px 0px;
+}
+.advsearch .btn{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color: #4A8BF5;
+    padding: 0px;
+}
+.advsearch .btn:hover{
+    background-color: #23337D;
+}
+.nav-wrapper{
+    background-color: #fff;
+}
+nav ul a:hover {
+    background-color: #23337D;
+}
+@media only screen and (max-width : 992px) {
+    .advsearch .input-field{
+        border: 1px solid  #cfe0fc;
+    }
+}

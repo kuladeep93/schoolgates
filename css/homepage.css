@@ -1,0 +1,177 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 7, 2016, 10:19:11 PM
+    Author     : KULADEEP
+*/
+body{
+    height: 100vh;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bgclrprim{
+    background-color: #4A8BF5;
+}
+.clrwt{
+    color: #fff;
+}
+.ht50-30{
+    height: 50px;
+}
+#cont{
+    position: relative;
+    background-color: #fff;
+    padding: 0px 0px 1px 0px;
+}
+a:hover{
+    text-decoration: none;
+    color: #d6d6d6;
+}
+.srchfld{
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    margin: 5px 0px;
+}
+.search .fa-microphone { 
+    border: 1px solid #4A8BF5;
+    border-radius: 50%;
+    padding: 2px 7px;
+    position: absolute;
+    font-size: 30px;
+    top: 2px;
+    right: 10px;
+    background: -webkit-linear-gradient(#fecb04,#1798cd, #e90ca3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 1px 1px 2px #d9d9d9;
+}
+.srchfld .input-field input[type=text]{
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0px 0 0 #fff;
+    height: 1.5rem;
+    color: #000;
+    margin: 8px 0px;
+}
+input{
+    color: #000;
+}
+.srchfld .input-field{
+    background-color: #fff;
+}
+.fnt20{
+    color: #4A8BF5;
+    font-size: 20px;
+}
+.btn{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color: #4A8BF5;
+}
+.btn:hover{
+    background-color: #23337D;
+}
+select {
+    width: 100%;
+    padding: 5px;
+    border: 0px solid #f2f2f2;
+    height: 2.65rem;
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+select{
+    color: #d6d6d6; 
+}
+option {
+    color: black;
+}
+
+option[default] {
+    display: none;
+}
+.logo img{
+    display: block;
+    margin: 0 auto;
+}
+#logomain {
+    height: 250px;
+    width: 250px;
+    position: relative;
+}
+#logotext{
+    height: 50px;
+}
+.headings{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.headings .bordr{
+    border-right: 1px solid #fff;
+}
+.pdng12-7{
+    padding: 12px;
+}
+.pdnglt12-7{
+    padding: 12px 0px;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .srchfld .input-field{
+        border: 1px solid  #cfe0fc;
+        padding-left: 10px;
+    }   
+    .headings{
+        padding: 0px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    body{
+        background-color: #4A8BF5;
+    }
+    #state {
+        padding-left: 0px;
+    }
+    #logomain{
+        height: 180px;
+        width: 180px;
+    }
+    #logotext{
+        height: 40px;
+    }
+    .headings{
+        font-size: 14px;
+    }
+    .ht50-30{
+        height: 30px;
+    }
+    .pdng12-7{
+        padding: 7px;
+    }
+    .pdnglt12-7{
+        padding: 12px 0px;
+    }
+
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .btn, .btn-large, .btn-flat {
+        padding: 0;
+    }
+}

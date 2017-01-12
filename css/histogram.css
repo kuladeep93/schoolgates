@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 27, 2016, 10:19:13 PM
+    Author     : KULADEEP
+*/
+.rating-details-histogram td {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.rating-details-histogram .histogram-label {
+    padding-right: 12px;
+}
+.rating-details-histogram .histogram-bar {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 2px;
+    text-align: right;
+    color: white;
+    height: 20px;
+    line-height: 20px;
+    transition: all 1.5s ease-out;
+    transition-property: transform;
+}
+.rating-details-histogram .text-inside {
+    font-smoothing: antialiased;
+    font-weight: bold;
+    margin-right: 9px;
+}
+.rating-details-histogram .text-outside {
+    vertical-align: middle;
+    margin-left: 3px;
+}
+.rating-details-histogram.collapsed .histogram-bar {
+    transform: translate3d(-100%, 0, 0);
+}
+.rating-details-histogram .n-5 .histogram-label {
+    color: #090;
+}
+.rating-details-histogram .n-5 .histogram-bar {
+    background-color: #71afe0;
+}
+.rating-details-histogram .n-4 .histogram-label {
+    color: #090;
+}
+.rating-details-histogram .n-4 .histogram-bar {
+    background-color: #71afe0;
+}
+.rating-details-histogram .n-3 .histogram-label {
+    color: #090;
+}
+.rating-details-histogram .n-3 .histogram-bar {
+    background-color: #71afe0;
+}
+.rating-details-histogram .n-2 .histogram-label {
+    color: #090;
+}
+.rating-details-histogram .n-2 .histogram-bar {
+    background-color: #71afe0;
+}
+.rating-details-histogram .n-1 .histogram-label {
+    color: #090;
+}
+.rating-details-histogram .n-1 .histogram-bar {
+    background-color: #71afe0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+.rating-details-histogram td,.rating-details-histogram th {
+    padding: 0px 0px;
+}

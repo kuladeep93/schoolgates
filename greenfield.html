@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>full details page</title>
+        <link rel="icon" href="favicon.ico">
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="screen,projection">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/institutionFullDetails.css"/>
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+        <link href="css/histogram.css" rel='stylesheet' type="text/css">
+        <link href="css/star-rating.css" rel="stylesheet" type="text/css">
+        <link type='text/css' href="css/tabs.css" rel='stylesheet'>
+        <link type="text/css" href="css/navbar.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/login.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+    <body>
+
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <img class="brand-logo center" src="images/logo123.png">
+                    <a href="#srchmodal" class="waves-effect waves-light modal-trigger button-collapse"><i class="fa fa-search" style="font-size: 19px; padding:0px 10px;"></i></a>
+                    <ul class="hide-on-med-and-down">
+                        <li id="search">
+                            <a class="drop bgclrprim" id="buttonsrch" href="#" style="width: 200px;"><span class="fa fa-search"></span>&emsp;Search</a>
+                            <ul class="row">
+                                <div class="col-xs-12 search_bar">
+                                    <input type="text" placeholder="Search for anything" />
+                                    <button class="fa fa-search" type="submit" value="Search"></button>
+                                </div>
+                            </ul>
+                        </li>
+                        <li id="advsearch">
+                            <a class="drop bgclrprim" id="buttonadvsrch" href="#" style="width: 200px"><span class="fa fa-search-plus"></span>&emsp;Advanced Search</a>
+                            <ul class="row">
+                                <div class="col-sm-12">
+                                    <div class="row input-field advsearch" style="background-color: #fff;height: 2.5rem;border: 1px solid #b7b7b7;">
+                                        <div class="input-field col-md-2">
+                                            <input id="state" type="text" placeholder="state">
+                                        </div>
+                                        <div class="input-field col-md-2">
+                                            <input id="city" type="text" placeholder="city">
+                                        </div>
+                                        <div class="input-field col-md-2">
+                                            <input id="area" type="text" placeholder="area">
+                                        </div>
+                                        <div class="input-field col-md-3">
+                                            <input id="category" type="text" placeholder="category">
+                                        </div>
+                                        <div class="input-field col-md-1">
+                                            <select class="browser-default" style="height: 2.4rem;border: 0px;">
+                                                <option value="" disabled selected>Distance</option>
+                                                <option value="1"> 1 KM</option>
+                                                <option value="2"> 2 KM</option>
+                                                <option value="3"> 3 KM</option>
+                                                <option value="4"> 4 KM</option>
+                                                <option value="5"> 5 KM</option>
+                                                <option value="6"> 10 KM</option>
+                                                <option value="7"> 20 KM</option>
+                                                <option value="8"> 30 KM</option>
+                                                <option value="9"> 40 KM</option>
+                                                <option value="10"> 50 KM & above</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2" style="padding: 0px;margin: 0px;">
+                                            <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin: 0px;height: 2.4rem;">search</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <a href="#loginmodal" class="bgclrprim modal-trigger"><img src="images/profile.png" class="circle responsive-img waves-effect waves-light right" style="width: 40px;margin-top: 5px"> </a>
+                        </li>
+                        <li class="right">
+                            <a class="bgclrprim" style="border-width: 0px 2px 0px 2px;"> Total visitors : 300</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <!------------------------Navigation bar closing section----------------------->
+
+        <div>
+            <div class="row">
+                <!--------------------first column section data------------------------>
+                <div class="col-lg-9">
+                    <div class="card">
+                        <div class="card-image gradimg visible-lg visible-md" id='clock' style="background-image: url('images/greenfield/greenfield schoolbanner.jpg');height: 351px; background-repeat: no-repeat;background-size: 100% 100%;">
+                            <div class="row" style="color: white;position: relative;">
+                                <div class="col-sm-9" style="font-size: 35px;">Green field School International</div>
+                                <div class="col-sm-3" style="font-size: 17px; padding-top:8px;">
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            <span class="bgclrsec" style="border-radius: 4px;">&ensp;4.0&ensp;</span>
+                                        </div>
+                                        <div class="cl-xs-8 center">
+                                            <div class="star-ratings"><span style="width:83%" class="star-ratings-rating"></span></div>
+                                            <span style="font-size: 12px;">Total ratings:1000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div style="margin-top: 150px;width: 120px;height: 120px;border: 4px #fff solid;" class="fill zoomimg profile-pic file-wrapper">
+                                        <img id="img-uploaded" src="images/greenfield/greenfield schoollogo.png" style="height: 120px;">
+                                        <input type="file" id="fileLoader" name="files" title="Load File" class="uploader" />
+                                    </div>
+                                </div>
+                                <div class="col-xs-6" style="padding-top: 245px;position: relative;">
+                                    <a class="fa fa-phone icon tooltipped modal-trigger" href="#call" data-position="top" data-delay="40" data-tooltip="call"></a>
+                                    <a class="fa fa-comment-o icon tooltipped modal-trigger" href="#message"  data-position="top" data-delay="40" data-tooltip="message"></a>
+                                    <a class="fa fa-users icon tooltipped modal-trigger" href="#refertoothers"  data-position="top" data-delay="40" data-tooltip="refer to others"></a>
+                                    <a class="fa fa-location-arrow icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="route map"></a>
+                                    <a class="fa fa-pencil-square-o icon tooltipped modal-trigger" href="#enquiryform"  data-position="top" data-delay="40" data-tooltip="enquiry form"></a>
+                                    <a class="fa fa-whatsapp icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="whatsapp sharing"></a>
+                                    <a class="fa fa-facebook icon tooltipped" href="#"  data-position="top" data-delay="40" data-tooltip="facebook sharing"></a>
+                                    <a class="fa fa-picture-o icon tooltipped" href="#"  data-position="top" data-delay="40" data-tooltip="image gallery"></a>
+                                    <a class="fa fa-play-circle-o icon tooltipped" href='#' data-position="top" data-delay="40" data-tooltip="video gallery"></a>
+                                    <a class="fa fa-comments-o icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="live chat"></a>
+                                    <a class="fa fa-video-camera icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="video call"></a>
+
+                                </div>
+
+                                <div class="col-xs-4" style="font-size: 13px;padding-top: 165px;">
+                                    <ul>
+                                        <li>Corporate Office: #27-4-20  </li>
+                                        <li>Beside Grandhi Associates</li>
+                                        <li>Building Near Raj Jewellers, </li>
+                                        <li>9397367888, 9392531999</li>
+                                        <li>Email-Id : info232@greenfieldschool.co.in</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-------------------mobile view data------------------------------->
+<!--                        <div class="card hoverable hidden-md hidden-lg" style="overflow: hidden;">
+                            <div style="bottom: 5px;position: fixed;">
+                                <span class="fa fa-angle-up modal-trigger"></span>
+                            </div>
+
+                            <div class="modal">
+                                <table>
+                                    <tr>
+                                        <td>Management</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="image-box">
+                                    <div class="image gradimg" style="background-image: url('images/logo4.jpg')">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="fnt20"><b> Vidya nikethan</b></div>
+                                            </div>
+                                            <div class="col-xs-2" style="margin-top: 3px;">
+                                                <div class="fnt20"><span class="fa fa-map-marker"></span></div>
+                                            </div>
+                                            <div class="col-xs-3" style="margin-top: 3px;">
+                                                <div class="fnt20"><span class="fa fa-road"><span style="font-size: 16px;">34KMS</span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <img src="images/gallery1.jpg" class="z-depth-2" style="width: 85px;height: 85px;border: 2px solid #fff ;margin: 70px 0px 0px -5px; position: relative">
+                                            </div>
+                                            <div class="col-xs-5 center" style="margin: 112px 0px 0px -5px;position: relative">
+                                                <span style="font-size: 12px;">Visitors:1000</span>
+                                                <div class="star-ratings"><span style="width:80%" class="star-ratings-rating"></span></div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row" style="margin: -15px 0px; ">
+                                <div class="col-xs-2">
+                                    <a class="fa fa-phone icon modal-trigger" href="#call"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-comment-o icon  modal-trigger" href="#message" ></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-users icon modal-trigger " href="#refertoothers" ></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-location-arrow icon  " href="#" ></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-pencil-square-o icon modal-trigger" href="#enquiryform"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-whatsapp icon " href="#"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-facebook icon " href="#"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-picture-o icon" href="#"></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-play-circle-o icon " href='#'></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-comments-o icon" href="#" ></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-video-camera icon" href="#"  ></a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="fa fa-certificate icon" href="#"   style=" color: #090; font-size: 20px;padding-top: 4px;"></a>
+                                </div>
+
+
+                            </div>
+                            <div class="row" style="margin-bottom: -10px;">
+                                <div class="col-xs-6">
+                                    <p class="schooldata"> 
+                                        prepare an on as. Reasonable particular on my it in from sympathize
+                                        Arrived compass prepare an on as.
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p> 040-22222222<br>
+                                        98991234567<br>
+                                        98991234567<br>
+                                        <span class="clrprim tooltipped" data-position="top" data-tooltip="info@symentax_technologies.com"> info@symentax_technologies.com</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!-------------------mobile view data closes here-------------------->
+                        <div class="card-content" style="padding: 0px;">
+                            <!--------------tab data content---------------------> 
+                            <div class="js-tab-widget">
+                                <ul class="tab-list">
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-1">Overview</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-2">Management</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-3">Faculty</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-4">Courses & fee</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-5">Admission</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-6">Activities</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-7">Achievements</a>
+                                    </li>
+                                    <li class="tab-item">
+                                        <a class="tab-link" href="#tab-8">direction map</a>
+                                    </li>
+                                </ul>
+                                <section id="tab-1" class="tab-panel">
+                                    <div class="row">
+                                        <div class="slip" style="padding-right: 0px;">
+                                            <div class="col-md-6">
+                                                <span class="fnt20"><b>About Us</b></span>
+                                                <p class="largeitem">Green Field School International keeps its focus honed in pursuance of the skills required for application, analysis, synthesis, evaluation and creation of knowledge a strong secular ethos to understand the <a href="greenfieldaboutus.html">...Read More</a></p>
+                                            </div> 
+                                            <div class="col-md-6 panorama" style="padding: 0px;">
+                                                <img src="images/panaroma.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="slip">
+                                                <span class="fnt20">&nbsp;Principal Speach</span>
+
+                                                <p class="pdnglt10 item">An eminent academician who educates one-self and others who come across in all circumstances and in every opportunity by updating inquisitively to persuade the same
+                                                </p>
+                                            </div>
+                                            <div class="slip">
+                                                <span class="fnt20">&nbsp;Misssion</span>
+                                                <p class="pdnglt10 item">School aims at comprehensive, 360 degree education for all Innovations in teaching and learning methodologies Productive and stress free learning</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="slip">
+                                                <span class="fnt20">&nbsp;Certifications</span>
+                                                <p class="pdnglt10 item">We provide all the facilites better future of the child. Together we provide all the feature for the growth of the children and with the best results. We promise each parent with the best of the result from the for a kid to learn with all the features to learn</p>
+                                            </div>
+                                            <div class="slip">
+                                                <span class="fnt20">&nbsp;Vision</span>
+                                                <p class="pdnglt10 item">Aims at moulding IDEAL GLOBAL CITIZENS. Inclusive Teaching Methods No Child Left Behind Policy Exclusively designed Assessment Tools ? CCE Focus on Affective, Cognitive and Psychomotor Skills</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span class="fnt20">&nbsp;Image gallery</span>
+                                            <div class="row">
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html">   <div class="box" style="background:url(images/greenfield/greenfield.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html"> <div class="box" style="background:url(images/greenfield/greenfield1.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html"> <div class="box" style="background:url(images/greenfield/greenfield3.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html"> <div class="box" style="background:url(images/greenfield/greenfield4.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html"> <div class="box" style="background:url(images/greenfield/greenfield5.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html">  <div class="box" style="background:url(images/greenfield/greenfield6.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html">  <div class="box" style="background:url(images/greenfield/greenfield7.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <a href="greenfieldsimage.html">  <div class="box" style="background:url(images/greenfield/greenfield8.jpg) no-repeat;background-size: 100% 100%; padding: 0px;"></div></a>
+                                                </div>
+                                                <div class="col-xs-4" style="padding: 0px;">
+                                                    <div class="box" style="background:url(images/greenfield/greenfield9.jpg) no-repeat;background-size: 100% 100%; padding: 0px;">
+                                                        <a href="greenfieldsimage.html">
+                                                            <div class="overlay">
+                                                                <span class="fa fa-plus">&ensp;9</span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="fnt20">&nbsp;Video gallery</span>
+                                            <div class="row">
+                                                <div class="col-xs-6" style="padding: 0px;">
+                                                    <div class="box" style="border: 0">
+                                                        <a data-filetype="video/mp4" href="#">
+                                                            <video type="video/mp4" style="height: 100px;border: 1px solid #ccc;border-radius: 4px;">
+                                                                <source src="images/greenfield/Green Field School International.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6" style="padding: 0px;">
+                                                    <div class="box" style="border: 0">
+                                                        <a data-filetype="video/mp4" href="#">
+                                                            <video type="video/mp4" style="height: 100px;border: 1px solid #ccc;border-radius: 4px;">
+                                                                <source src="images/greenfield/Green Field School International kakinada.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6" style="padding: 0px;">
+                                                    <div class="box" style="border: 0">
+                                                        <a data-filetype="video/mp4" href="images/greenfield/Greenfields group of Schools.mp4">
+                                                            <video type="video/mp4" style="height: 100px;border: 1px solid #ccc;border-radius: 4px;">
+                                                                <source src="images/greenfield/Greenfields group of Schools.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6" style="padding: 0px;">
+                                                    <div class="box" style="border: 0">
+                                                        <a data-filetype="video/mp4" href="images/greenfield/Green Field School International, Vakada.mp4">
+                                                            <video type="video/mp4" style="height: 100px;border: 1px solid #ccc;border-radius: 4px;">
+                                                                <source src="images/greenfield/Green Field School International, Vakada.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6" style="padding: 0px;">
+                                                    <div class="box" style="border: 0">
+                                                        <a data-filetype="video/mp4" href="images/greenfield/Class- IX-D Swachta Abhiyaan Green Fields School.mp4">
+                                                            <video type="video/mp4" style="height: 100px;border: 1px solid #ccc;border-radius: 4px;">
+                                                                <source src="images/greenfield/Class- IX-D Swachta Abhiyaan Green Fields School.mp4" type="video/mp4">
+                                                                Your browser does not support the video tag.
+                                                            </video>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="slip">
+                                                <img src="images/InstituteFullDetails/libreary.png">
+                                                <p class="item">Digitalized Standard International Library Unique in its true sense and worth Peaceful environment for reading, learning and thinking Availability of information in both hard and soft copies Classification of books and journals</p>
+                                            </div>
+                                            <div class="slip">
+                                                <img src="images/InstituteFullDetails/codes.jpg">
+                                                <p class="item">We are bound to our codes and rules and ragging is completely prohibited in our primises</p>
+                                            </div>
+                                            <div class="slip">
+                                                <img src="images/InstituteFullDetails/sportandfacilities.jpg">
+                                                <p class="item">We had a best in class play ground over 2.5 acres covring and with a football and innerstadium with basket ball court</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="slip">
+                                                <img src="images/InstituteFullDetails/labandfacilities.png">
+                                                <p class="item">Separate Server with Internet facility Updated Software Students and Teachers friendly Preparation of Teaching Aids Uninterrupted Power Supply  </p>
+                                            </div>
+                                            <div class="slip">
+                                                <img src="images/InstituteFullDetails/technology.jpg">
+                                                <p class="item">We are bound to our codes and rules and ragging is completely prohibited in our primises</p>
+                                            </div>
+                                            <div class="slip">
+                                                <img src="images/InstituteFullDetails/transportation.png">
+                                                <p class="item">currently providing the maximum reach to all the places arround and still expanding to new locations </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="tab-2" class="tab-panel">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="card" style="padding: 10px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/chairman-150x150.jpg" style="height: 6.5cm;">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding: 0px 10px;">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">Chairman</li>
+                                                        <li>An ever-remembering kindfull heart in the presence of Kakinada.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="card " style="padding: 10px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/scr-150x150.jpg" style="height: 6.5cm;">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding: 0px 10px;">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">Secretery</li>
+                                                        <li>Self- motivated architect who designs the marvels for the society</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="card" style="padding: 10px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/gfs_prins-150x150.jpg" style="height: 6.5cm;">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding: 0px 10px;">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">Principal</li>
+                                                        <li>An eminent academician who educates one-self and others</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="tab-3" class="tab-panel">
+                                    <h4>Teaching Staff</h4>
+                                    <div class="card hoverable">
+                                        <div class="row">
+                                            <div class="col-lg-3 fill zoomimg">
+                                                <img src="images/galleryy.png" style="width: 230px;">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <table class="striped tpdng5" >
+                                                    <tr>
+                                                        <td>Name: </td>
+                                                        <td>Designation: </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Experiance: </td>
+                                                        <td>Qualification: </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Expertise: </td>
+                                                        <td>Working asin: </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mobile no: </td>
+                                                        <td>Email id: </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Availability timings: </td>
+                                                        <td>Classes takencare </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="tab-4" class="tab-panel">
+                                    <table class="striped responsive-table tpdng2" >
+                                        <thead>
+                                            <tr>
+                                                <th>course name</th>
+                                                <th>duration</th>
+                                                <th>fee structure</th>
+                                                <th>features</th>
+                                                <th>admission availability</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>I-X telugu </td>
+                                                <td>N/A</td>
+                                                <td>N/A</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>Individual assistance</li>
+                                                        <li>Personal classes</li>
+                                                    </ol>
+                                                </td>
+                                                <td>available</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I-X English </td>
+                                                <td>N/A</td>
+                                                <td>N/A</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>Individual assistance</li>
+                                                        <li>Personal classes</li>
+                                                    </ol>
+                                                </td>
+                                                <td>available</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I-X Hindi </td>
+                                                <td>N/A</td>
+                                                <td>N/A</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>Individual assistance</li>
+                                                        <li>Personal classes</li>
+                                                    </ol>
+                                                </td>
+                                                <td>available</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I-X Maths </td>
+                                                <td>N/A</td>
+                                                <td>N/A</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>Individual assistance</li>
+                                                        <li>Personal classes</li>
+                                                    </ol>
+                                                </td>
+                                                <td>available</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I-X Science </td>
+                                                <td>N/A</td>
+                                                <td>N/A</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>Individual assistance</li>
+                                                        <li>Personal classes</li>
+                                                    </ol>
+                                                </td>
+                                                <td>available</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I-X Social </td>
+                                                <td>N/A</td>
+                                                <td>N/A</td>
+                                                <td>
+                                                    <ol>
+                                                        <li>Individual assistance</li>
+                                                        <li>Personal classes</li>
+                                                    </ol>
+                                                </td>
+                                                <td>available</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <section id="tab-5" class="tab-panel">
+                                    <h4>Admission procedure</h4>
+                                    <p><b>Admissions Open</b> - Kindergarten to X, for the Academic Session 2016-17</p>
+                                    <ul>
+                                        <li>
+                                            Registration forms can be availed from the school office
+                                        </li>
+                                        <li>
+                                            Visit our website www.greenfieldschool.co.in
+                                        </li>
+                                        <li>
+                                            Contact Admission Counsellors. - +91 93 973 67 888, +91 93 92 531 999
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <b>Admission Procedure</b>
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            Please collect the admission form from the school office or download from the School website after registering your ward
+                                        </li>
+                                        <li>
+                                            Submit the completed admission form along with the required details, documents and fee at the school office
+                                        </li>
+                                        <li>
+                                            Admission forms must be completed by the parents and same would be accepted only from the parents
+                                        </li>
+                                        <li>
+                                            Submit an attested copy of the birth certificate & progress report of the grade studied
+                                        </li>
+                                        <li>
+                                            Kindly fill the transportation form if the student likes to avail school transporting facility
+                                        </li>
+                                        <li>
+                                            Uniform, books, time table and other schedules can be obtained from the school admin office and collect the same as per the schedule
+                                        </li>
+                                        <li>
+                                            Make sure the presence of your ward on the scheduled day of commencemen
+                                        </li>
+                                    </ol>
+
+                                </section>
+                                <section id="tab-6" class="tab-panel">
+                                    <div class="row">
+                                        <div class=" col-lg-4 col-md-6 col-xs-12">
+                                            <div class="card" style="padding: 0px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/IMG_0235.jpg">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding-top: 0px">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">gymnasium</li>
+                                                        <li>Regular exercise carries many physical and mental health benefits.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-lg-4 col-md-6 col-xs-12">
+                                            <div class="card" style="padding: 0px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/DSCN7362-1024x576.jpg">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding-top: 0px">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">HorseRiding</li>
+                                                        <li>The benefits of horse riding are immense enjoyment, physically and mental fitness and fun.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-lg-4 col-md-6 col-xs-12">
+                                            <div class="card" style="padding: 0px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/4K6A1895-2-1024x683.jpg">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding-top: 0px">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">sports</li>
+                                                        <li>The importance of sports and games in school encompasses more than just the benefit of physical activity.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section id="tab-7" class="tab-panel">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="card " style="padding: 0px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/1.png" style="height: 6.5cm;">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding: 0px 10px;">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">K.V. Mahitha-IX</li>
+                                                        <li> A.P state level Group I swimming competition</li>
+                                                        <li>2 Bronze Medals</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="card " style="padding: 0px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/300.156.jpg" style="height: 6.5cm;">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding: 0px 10px;">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">Ch. Bhavya-IX</li>
+                                                        <li>A.P state level winter aquatic competition</li>
+                                                        <li>Silver Medals</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-xs-12">
+                                            <div class="card " style="padding: 0px;">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <img src="images/greenfield/5.1-Copy.jpg" style="height: 6.5cm;">
+                                                </div>
+                                                <div class="card-content" style="cursor: pointer;padding: 0px 10px;">
+                                                    <ul style="list-style-type: none;">
+                                                        <li class="fnt20">P.S.S.G. Dhaaran-VI</li>
+                                                        <li>National Science Olympiad, 2015</li>
+                                                        <li>Gold Medal</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <!----------------end of the tab content------------>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------first column section close------------------> 
+
+                <!------------------------Second column section data------------------->
+                <div class="col-lg-3">
+                    <div class="row mrgbtm0">
+                        <div class="card mrgbtm0">
+                            <div class="card-content">
+                                <span>Visitor Count : 110023</span>
+                                <hr>
+                                <table class="rating-details-histogram collapsed">
+                                    <tbody>
+                                        <tr class="n-5">
+                                            <th scope="row" class="histogram-label nowrap">
+                                                <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+                                            </th>
+                                            <td>
+                                                <div class="histogram-bar" style="width: 100%;">
+                                                    <span class="text-inside">1146</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="n-4">
+                                            <th scope="row" class="histogram-label nowrap">
+                                                <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span>
+                                            </th>
+                                            <td>
+                                                <div class="histogram-bar" style="width: 78%;">
+                                                    <span class="text-inside">897</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="n-3">
+                                            <th scope="row" class="histogram-label nowrap">
+                                                <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span>
+                                            </th>
+                                            <td>
+                                                <div class="histogram-bar" style="width: 34%;">
+                                                    <span class="text-inside">395</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="n-2">
+                                            <th scope="row" class="histogram-label nowrap">
+                                                <span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span>
+                                            </th>
+                                            <td>
+                                                <div class="histogram-bar" style="width: 12%;"></div>
+                                                <span class="text-outside">134</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="n-1">
+                                            <th scope="row" class="histogram-label nowrap">
+                                                <span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span>
+                                            </th>
+                                            <td>
+                                                <div class="histogram-bar" style="width: 3%;"></div>
+                                                <span class="text-outside">34</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mrgbtm0">
+                        <div class="card mrgbtm0 ">
+                            <div class="card-content">
+                                <span>Contact information</span>
+                                <hr>
+                                <ul>
+                                    <li>Email-Id : info232@greenfieldschool.co.in</li>
+                                    <li>Website : www.greenfieldschool.co.in</li>
+                                    <li>Corporate Office: #27-4-20 Beside Grandhi Associates Building Near Raj Jewellers,</li>
+                                    <li>Temple Street, Kakinada</li>
+                                    <li>City : EastGodavari</li>
+                                    <li>State : Andhra Pradesh </li>
+                                </ul>
+                                <a class="waves-effect waves-light btn" href="#" style="margin: 10px 0px 0px 0px">get driving directions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card ">
+                            <div class="card-content">
+                                <span>Latest Tweets</span>
+                                <hr>
+                                <img src="images/profile.png" alt="" class="circle responsive-img wdth20">
+                                <span>&emsp; Mickel</span><br>
+                                <span class="black-text">
+                                    One of the best choice I made in my life to choose this institution for my child 
+                                </span>
+                                <hr>
+                                <img src="images/profile.png" alt="" class="circle responsive-img wdth20">
+                                <span>&emsp; Sony</span><br>
+                                <span class="black-text">
+                                    good one to pick out for the best future of my child.  Keep it up green fields great job you guys
+                                </span>
+                                <hr>
+                                <img src="images/profile.png" alt="" class="circle responsive-img wdth20">
+                                <span>&emsp; Suresh</span><br>
+                                <span class="black-text">
+                                    school is awesome and the staff are great I put all my trust in them for the future of my child
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------second column section close----------------> 
+            </div>
+        </div>
+
+
+
+
+        <!------------------ Modal Structures ---------------------------->
+        <div id="srchmodal" class="modal bottom-sheet">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="row input-field advsearch" style="border: 1px solid #4A8BF5; background-color: #fff;">
+                            <div class="input-field col-md-10 col-xs-9" style="padding: 0px 0px 0px 10px; margin-top: 0px">
+                                <input type="text" class="form-control" id="auto2" placeholder="enter state">
+                                <!-- <input id="state" type="text" placeholder="search by institute name">-->
+                            </div>
+                            <div class="col-md-2 col-xs-3" style="padding: 0px;">
+                                <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin-top: 0px;">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="row input-field advsearch brdr" style="background-color: #fff;">
+                            <div class="input-field col-xs-12 col-sm-6 col-md-2" style="padding: 0px 0px 0px 10px; margin-top: 0px">
+                                <input id="state" type="text" placeholder="state">
+                            </div>
+                            <div class="input-field col-xs-12 col-sm-6 col-md-2" style="padding: 0px 0px 0px 10px;margin-top: 0px">
+                                <input id="city" type="text" placeholder="city">
+                            </div>
+                            <div class="input-field col-xs-12 col-sm-6 col-md-2" style="padding: 0px 0px 0px 10px;margin-top: 0px;">
+                                <input id="area" type="text" placeholder="area">
+                            </div>
+                            <div class="input-field col-xs-8 col-sm-6 col-md-3" style="padding: 0px 0px 0px 10px;margin-top: 0px;">
+                                <input id="category" type="text" placeholder="category">
+                            </div>
+                            <div class="input-field col-xs-4 col-sm-6 col-md-1" style="padding: 0px 0px 0px 10px;margin-top: 0px">
+                                <select class="browser-default">
+                                    <option value="" disabled selected>Distance</option>
+                                    <option value="1"> 1 KM</option>
+                                    <option value="2"> 2 KM</option>
+                                    <option value="3"> 3 KM</option>
+                                    <option value="4"> 4 KM</option>
+                                    <option value="5"> 5 KM</option>
+                                    <option value="6"> 10 KM</option>
+                                    <option value="7"> 20 KM</option>
+                                    <option value="8"> 30 KM</option>
+                                    <option value="9"> 40 KM</option>
+                                    <option value="10"> 50 KM & above</option>
+                                </select>
+                            </div>
+                            <div class=" col-xs-12 col-sm-6 col-md-2" style="padding: 0px;">
+                                <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin-top: 0px;">search</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="call" class="modal">
+            <div class="modal-content">
+                <h4>School Name</h4>
+                <form>
+                    <div class="row">
+                        <div class="input-field col-md-6">
+                            <input id="first_name" type="text">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col-md-6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-md-6">
+                            <input id="mobileno" type="text">
+                            <label for="mobileno">Mobile no</label>
+                        </div>
+                        <div class="input-field col-md-6">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="please enter a valid EmailId">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="message" class="modal">
+            <div class="modal-content">
+                <h4>School Name</h4>
+                <form>
+                    <div class="row">
+                        <div class="input-field col-md-6">
+                            <input id="first_name" type="text">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col-md-6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-md-6">
+                            <input id="mobileno" type="text">
+                            <label for="mobileno">MObile no</label>
+                        </div>
+                        <div class="input-field col-md-6">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="please enter a valid EmailId">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-xs-12">
+                            <textarea id="comment" class="materialize-textarea" placeholder="please enter your message"></textarea>
+                            <label for="comment">comment</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="refertoothers" class="modal">
+            <div class="modal-content">
+                <form>
+                    <div class="row">
+                        <div class="input-field col-md-4">
+                            <input id="first_name" type="text">
+                            <label for="first_name">Name</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="please enter a valid EmailId">Email</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="mobileno" type="text">
+                            <label for="mobileno">Mobile no</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-md-4">
+                            <input id="first_name" type="text">
+                            <label for="first_name">Referal Name</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="please enter a valid EmailId">Refaral Email</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="mobileno" type="text">
+                            <label for="mobileno">Referal Mobile no</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!--<a class="waves-effect waves-light btn right-aligned col-xs-4"><i class="fa fa-plus right"></i>add more</a>-->
+                        <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="enquiryform" class="modal">
+            <div class="modal-content">
+                <form>
+                    <div class="row">
+                        <div class="input-field col-md-4">
+                            <input id="first_name" type="text">
+                            <label for="first_name">Name</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" data-error="please enter a valid EmailId">Email</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="mobileno" type="text">
+                            <label for="mobileno">Mobile no</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-md-4">
+                            <input id="cur" type="text">
+                            <label for="cur">current education</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="look" type="text">
+                            <label for="look">looking for</label>
+                        </div>
+                        <div class="input-field col-md-4">
+                            <input id="year" type="text">
+                            <label for="year">batch and year </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col-xs-12">
+                            <textarea id="comment" class="materialize-textarea" placeholder="please enter your message"></textarea>
+                            <label for="comment">message</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="loginmodal" class="modal" style="height: 100%">
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="container">
+                        <div id="logindiv" class="content" style="display: block">
+                            <h1>Login</h1>
+                            <form class="form">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" id="login-button">Login</button>
+                                <div class="row" style="margin-top: 10px;">
+                                    <div class="col-xs-6">
+                                        <button class="butn" type="button" id="institutelogin">Institute Login</button>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <button class="butn" type="button" id="register">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div id="institutelogindiv" class="content">
+                            <h1>Institute Login</h1>
+                            <form class="form">
+                                <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" id="login-button">Login</button>
+                                <div class="row" style="margin-top: 10px;">
+                                    <div class="col-xs-6">
+                                        <button class="butn" type="button" id="login">User Login</button>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <button class="butn" type="button" id="register">Register</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="registerdiv" class="content">
+                            <h1>Register</h1>
+                            <form class="form">
+                                <input type="text" placeholder="Username">
+                                <input type="text" placeholder="Mobile Number">
+                                <input type="email" placeholder="EmailId">
+                                <input type="password" placeholder="Password">
+                                <button type="submit" id="login-button">Register</button>
+                                <div class="row" style="margin-top: 10px;">
+                                    <div class="col-xs-6">
+                                        <button class="butn" type="button" id="login">User Login</button>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <button class="butn" type="button" id="institutelogin">Institute Login</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <ul class="bg-bubbles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!--------------------------------modal sections close here------------->
+        <!--Import jQuery before materialize.js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyFpKM3tHFKevml5hnCvEHcEHgraSlyS4&callback=initMap" async defer></script>
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/institutionFullDetails.js"></script>
+        <script type="text/javascript" src="js/histogram.js"></script>
+        <script type='text/javascript' src="js/tabs.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
+    </body>
+</html>

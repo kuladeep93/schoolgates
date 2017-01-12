@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>video gallery</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/gallery.css"/>
+        <link rel="stylesheet" href="css/navbar.css" type="text/css"/>
+    </head>
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <!--<a href="#" class="brand-logo center" style="font-family: 'Orbitron', sans-serif;font-size: 40px;margin-top: -10px;">schoolgates</a>-->
+                    <img class="brand-logo center" src="images/logo123.png" style="margin-left: 40px;">
+                    <a href="#srchmodal" class="waves-effect waves-light modal-trigger button-collapse"><i class="fa fa-search" style="font-size: 19px; padding:0px 10px;"></i></a>
+                    <ul class="hide-on-med-and-down">
+                        <li id="search">
+                            <a class="drop bgclrprim" id="buttonsrch" href="#" style="width: 200px;"><span class="fa fa-search"></span>&emsp;Search</a>
+                            <ul class="row">
+                                <div class="col-xs-12 search_bar">
+                                    <input type="text" placeholder="Search for anything" />
+                                    <button class="fa fa-search" type="submit" value="Search"></button>
+                                </div>
+                            </ul>
+                        </li>
+                        <li id="advsearch">
+                            <a class="drop bgclrprim" id="buttonadvsrch" href="#" style="width: 200px"><span class="fa fa-search-plus"></span>&emsp;Advanced Search</a>
+                            <ul class="row">
+                                <div class="col-sm-12">
+                                    <div class="row input-field advsearch" style="background-color: #fff;height: 2.5rem;border: 1px solid #b7b7b7;">
+                                        <div class="input-field col-md-2">
+                                            <input id="state" type="text" placeholder="state">
+                                        </div>
+                                        <div class="input-field col-md-2">
+                                            <input id="city" type="text" placeholder="city">
+                                        </div>
+                                        <div class="input-field col-md-2">
+                                            <input id="area" type="text" placeholder="area">
+                                        </div>
+                                        <div class="input-field col-md-3">
+                                            <input id="category" type="text" placeholder="category">
+                                        </div>
+                                        <div class="input-field col-md-1">
+                                            <select class="browser-default" style="height: 2.4rem;border: 0px;">
+                                                <option value="" disabled selected>Distance</option>
+                                                <option value="1"> 1 KM</option>
+                                                <option value="2"> 2 KM</option>
+                                                <option value="3"> 3 KM</option>
+                                                <option value="4"> 4 KM</option>
+                                                <option value="5"> 5 KM</option>
+                                                <option value="6"> 10 KM</option>
+                                                <option value="7"> 20 KM</option>
+                                                <option value="8"> 30 KM</option>
+                                                <option value="9"> 40 KM</option>
+                                                <option value="10"> 50 KM & above</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2" style="padding: 0px;margin: 0px;">
+                                            <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin: 0px;height: 2.4rem;">search</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <a href="#" class="bgclrprim"><img src="images/profile.png" class="circle responsive-img waves-effect waves-light right" style="width: 40px;margin-top: 5px"> </a>
+                        </li>
+                        <li class="right">
+                            <a class="bgclrprim" style="border-width: 0px 2px 0px 2px;"> Total visitors : 300</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="container-fluid">
+            <h3>School name </h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card">
+                        <article>
+                            <video controls>
+                                <source src="images/The.Secret.Life.Of.Pets.2016.720p.BRRip.XviD-EVO - sample.mp4" type="video/mp4" />	
+                            </video>
+                        </article>
+                        <h4 style="padding-left: 10px;">title of the video </h4>
+                        <div class="row" style="padding: 10px;">
+                            <a class="fa fa-phone icon tooltipped modal-trigger" href="#call" data-position="top" data-delay="40" data-tooltip="call"></a>
+                            <a class="fa fa-comment-o icon tooltipped modal-trigger" href="#message"  data-position="top" data-delay="40" data-tooltip="message"></a>
+                            <a class="fa fa-users icon tooltipped modal-trigger" href="#refertoothers"  data-position="top" data-delay="40" data-tooltip="refer to others"></a>
+                            <a class="fa fa-location-arrow icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="route map"></a>
+                            <a class="fa fa-pencil-square-o icon tooltipped modal-trigger" href="#enquiryform"  data-position="top" data-delay="40" data-tooltip="enquiry form"></a>
+                            <a class="fa fa-whatsapp icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="whatsapp sharing"></a>
+                            <a class="fa fa-facebook icon tooltipped" href="#"  data-position="top" data-delay="40" data-tooltip="facebook sharing"></a>
+                            <a class="fa fa-picture-o icon tooltipped" href="#"  data-position="top" data-delay="40" data-tooltip="image gallery"></a>
+                            <a class="fa fa-play-circle-o icon tooltipped" href='#' data-position="top" data-delay="40" data-tooltip="video gallery"></a>
+                            <a class="fa fa-comments-o icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="live chat"></a>
+                            <a class="fa fa-video-camera icon tooltipped " href="#"  data-position="top" data-delay="40" data-tooltip="video call"></a>
+                        </div> 
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h4>Published on Jan 9,2016</h4>
+                            <hr>
+                            <p> Eros international is currently presents the heartbreaking and powerful story of a professor siras, a prolific
+                                teacher who faced abject and presecution at the hands of the university authors and other citizens for being gay.
+                                Watch the emotional trailer of Alligarah only on Eros now international. </p>
+                        </div>
+                    </div>
+
+                    <div class="card ">
+                        <div class="card-content">
+                            <h4>ALL COMMENTS(689)</h4>
+                            <img src="images/profile.png" alt="" class="circle responsive-img wdth20">
+                            <span>&emsp; Mickel</span><br>
+                            <span class="black-text">
+                                One of the best choice I made in my life to choose this institution for my child 
+                            </span>
+                            <hr>
+                            <img src="images/profile.png" alt="" class="circle responsive-img wdth20">
+                            <span>&emsp; Mickel</span><br>
+                            <span class="black-text">
+                                One of the best choice I made in my life to choose this institution for my child 
+                            </span>
+                            <hr>
+                            <img src="images/profile.png" alt="" class="circle responsive-img wdth20">
+                            <span>&emsp; Mickel</span><br>
+                            <span class="black-text">
+                                One of the best choice I made in my life to choose this institution for my child 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-xs-5" style="padding:0px;">
+                                <img src="images/galleryy.png" style="width: 100%;height: 100px;">
+                            </div>
+                            <div class="col-xs-7">
+                                <span class="fnt20">title of the video</span><br>
+                                <span>description about the video in detail or less dtail about the video
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!------------------ Modal Structures ---------------------------->
+            <div id="srchmodal" class="modal bottom-sheet">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-10 col-md-offset-1">
+                            <div class="row input-field advsearch" style="border: 1px solid #4A8BF5; background-color: #fff;">
+                                <div class="input-field col-md-10 col-xs-9" style="padding: 0px 0px 0px 10px; margin-top: 0px">
+                                    <input type="text" class="form-control" id="auto2" placeholder="enter state">
+                                    <!-- <input id="state" type="text" placeholder="search by institute name">-->
+                                </div>
+                                <div class="col-md-2 col-xs-3" style="padding: 0px;">
+                                    <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin-top: 0px;">search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-10 col-md-offset-1">
+                            <div class="row input-field advsearch brdr" style="background-color: #fff;">
+                                <div class="input-field col-xs-12 col-sm-6 col-md-2" style="padding: 0px 0px 0px 10px; margin-top: 0px">
+                                    <input id="state" type="text" placeholder="state">
+                                </div>
+                                <div class="input-field col-xs-12 col-sm-6 col-md-2" style="padding: 0px 0px 0px 10px;margin-top: 0px">
+                                    <input id="city" type="text" placeholder="city">
+                                </div>
+                                <div class="input-field col-xs-12 col-sm-6 col-md-2" style="padding: 0px 0px 0px 10px;margin-top: 0px;">
+                                    <input id="area" type="text" placeholder="area">
+                                </div>
+                                <div class="input-field col-xs-8 col-sm-6 col-md-3" style="padding: 0px 0px 0px 10px;margin-top: 0px;">
+                                    <input id="category" type="text" placeholder="category">
+                                </div>
+                                <div class="input-field col-xs-4 col-sm-6 col-md-1" style="padding: 0px 0px 0px 10px;margin-top: 0px">
+                                    <select class="browser-default">
+                                        <option value="" disabled selected>Distance</option>
+                                        <option value="1"> 1 KM</option>
+                                        <option value="2"> 2 KM</option>
+                                        <option value="3"> 3 KM</option>
+                                        <option value="4"> 4 KM</option>
+                                        <option value="5"> 5 KM</option>
+                                        <option value="6"> 10 KM</option>
+                                        <option value="7"> 20 KM</option>
+                                        <option value="8"> 30 KM</option>
+                                        <option value="9"> 40 KM</option>
+                                        <option value="10"> 50 KM & above</option>
+                                    </select>
+                                </div>
+                                <div class=" col-xs-12 col-sm-6 col-md-2" style="padding: 0px;">
+                                    <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin-top: 0px;">search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="call" class="modal">
+                <div class="modal-content">
+                    <h4>School Name</h4>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col-md-6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col-md-6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-6">
+                                <input id="mobileno" type="text" class="validate">
+                                <label for="mobileno">Mobile no</label>
+                            </div>
+                            <div class="input-field col-md-6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="please enter a valid EmailId">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="message" class="modal">
+                <div class="modal-content">
+                    <h4>School Name</h4>
+                    <form>
+                        <div class="row">
+                            <div class="input-field col-md-6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col-md-6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-6">
+                                <input id="mobileno" type="text" class="validate">
+                                <label for="mobileno">MObile no</label>
+                            </div>
+                            <div class="input-field col-md-6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="please enter a valid EmailId">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-xs-12">
+                                <textarea id="comment" class="materialize-textarea" placeholder="please enter your message"></textarea>
+                                <label for="comment">comment</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="refertoothers" class="modal">
+                <div class="modal-content">
+                    <form>
+                        <div class="row">
+                            <div class="input-field col-md-4">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Name</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="please enter a valid EmailId">Email</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="mobileno" type="text" class="validate">
+                                <label for="mobileno">Mobile no</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-4">
+                                <input id="referalname" type="text" class="validate">
+                                <label for="referalmobile">Referal Name</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="referalemail" type="email" class="validate">
+                                <label for="referalemail" data-error="please enter a valid EmailId">Refaral Email</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="referalmobileno" type="text" class="validate">
+                                <label for="referalmobileno">Referal Mobile no</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--<a class="waves-effect waves-light btn right-aligned col-xs-4"><i class="fa fa-plus right"></i>add more</a>-->
+                            <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="enquiryform" class="modal">
+                <div class="modal-content">
+                    <form>
+                        <div class="row">
+                            <div class="input-field col-md-4">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">Name</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="please enter a valid EmailId">Email</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="mobileno" type="text" class="validate">
+                                <label for="mobileno">Mobile no</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-4">
+                                <input id="cur" type="text" class="validate">
+                                <label for="cur">current education</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="look" type="text" class="validate">
+                                <label for="look">looking for</label>
+                            </div>
+                            <div class="input-field col-md-4">
+                                <input id="year" type="text" class="validate">
+                                <label for="year">batch and year </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-xs-12">
+                                <textarea id="comment" class="materialize-textarea" placeholder="please enter your message"></textarea>
+                                <label for="comment">message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a class="waves-effect waves-light btn right-aligned col-xs-4 col-xs-offset-8 modal-action modal-close">submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--------------------------------modal sections close here------------->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script type="text/javascript" src="js/stylesheets.js"></script>
+            <script type="text/javascript" src="js/navbar.js"></script>
+    </body>
+</html>

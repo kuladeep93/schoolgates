@@ -1,0 +1,226 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 30, 2016, 11:20:58 AM
+    Author     : KULADEEP
+*/
+
+body{
+    background-color: #fff;
+}
+.wdth20{
+    width: 20px;
+}
+.mrgntp-20{
+    margin-top: -20px;
+}
+.mrglt-10{
+    margin-left: -10px;
+}
+.mrgtp-5{
+    margin-top: -5px;
+}
+
+.pdnglt10{
+    padding-left: 10px;
+}
+.navbar-fixed{
+    height: 50px;
+}
+
+nav{
+    background-color: #23337D;
+    height: 50px;
+}
+nav ul li{
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    height: 50px;
+}
+nav ul li a{
+    height: 50px;
+    font-size: 15px;
+}
+.slider{
+    height: 300px;
+}
+.fnt20{
+    color: #4A8BF5;
+    font-size: 20px;
+}
+.tmbnl{
+    height: 120px;
+    margin-left: 0px;
+    border: 4px #fff solid;
+}
+
+#map {
+    width: 100vb;
+    height: 300px;
+}
+.slip{
+    margin: 10px 0px;
+    min-height: 140px;
+    padding: 10px 10px;
+    box-shadow: 5px 0px 5px #888888;
+}
+.shadowinset:after {
+    box-shadow: inset  0 5px #888888;
+}
+
+.slider .indicators .indicator-item {
+    display: none;
+}
+.tabs .tab{
+    line-height: 38px;
+}
+.tabs .tab a{
+    color: #4A8BF5;
+}
+.clrprim{
+    color: #4A8BF5;
+}
+.bgclrprim{
+    background-color: #4A8BF5;
+}
+.bgclrsec{
+    background-color: #090;
+}
+.clrsec{
+    color: #090;
+}
+.icon {
+    margin-top: -10px;
+    background-color: transparent;
+    width: 40px;
+    height: 30px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 6px;
+    color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+}
+.icon:hover{
+    border: #fff;
+    transform: scale(2.0);
+    transition: all 0.3s;
+    color: #4A8BF5;
+}
+.wt .icon:hover{
+    color: #fff;
+    border: #fff;
+}
+.progress-bar-striped, .progress-striped .progress-bar{
+    background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 40px 40px;
+}
+.progress-bar {
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    color: #fff;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15); 
+}
+.progress {
+    height: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: -5px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+.fill {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.zoomimg {
+    position: relative;
+    overflow: hidden;
+}
+.zoomimg img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.zoomimg:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+nav ul li:hover > ul {
+    display:block;
+    /*    position:fixed;
+        z-index: 100;
+        top:100px; 
+        left:0;
+        bottom:0; 
+        right:0;
+        background-color:rgba(0,0,0,0.4);   */
+}
+
+nav ul ul {
+    background: #fff;
+    color: #4A8BF5;
+    text-align: center;
+    display:none;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    box-shadow: 3px 0px 5px #888888;
+    border-bottom: 2px solid #23337D;
+}
+.select-wrapper{
+    top: 10px;
+}
+.select-wrapper span.caret{
+    top: -7px;
+}
+.select-wrapper input.select-dropdown{
+    border-bottom: 0px;
+}
+#advsearch input[type='text']{
+    border: 1px solid #23337D;
+    margin-top: -2px;
+    width: 10em;
+    height: 45px;
+    border-radius: 3px;
+}
+.lnk{
+    cursor: pointer; 
+}
+.glry{
+    border-radius: 10%;
+    height: 100px;
+}
+.glry200{
+    height: 200px;
+}
+
+.gradimg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.005),rgba(0,0,0,0),rgba(0,0,0,0.05),rgba(0,0,0,1));
+    opacity: 1.2; 
+}
+.jodit .icon {
+    background-color: #fff;
+}
+
+.tpdng5 th,.tpdng5 td{
+    padding: 5px 5px;
+}
+.tpdng2 th,.tpdng2 td{
+    padding: 0px 0px;
+}

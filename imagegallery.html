@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image gallery</title>
+        <link rel="icon" href="favicon.ico">
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/imagegallery.css"/>
+        <link type="text/css" rel="stylesheet" href="css/navbar.css"/>
+        <link type="text/css" rel="stylesheet" href="fontawesome/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <!--<a href="#" class="brand-logo center" style="font-family: 'Orbitron', sans-serif;font-size: 40px;margin-top: -10px;">schoolgates</a>-->
+                    <img class="brand-logo center" src="images/logo123.png" style="margin-left: 40px;">
+                    <a href="#srchmodal" class="waves-effect waves-light modal-trigger button-collapse"><i class="fa fa-search" style="font-size: 19px; padding:0px 10px;"></i></a>
+                    <ul class="hide-on-med-and-down">
+                        <li id="search">
+                            <a class="drop bgclrprim" id="buttonsrch" href="#" style="width: 200px;"><span class="fa fa-search"></span>&emsp;Search</a>
+                            <ul class="row">
+                                <div class="col-xs-12 search_bar">
+                                    <input type="text" placeholder="Search for anything" />
+                                    <button class="fa fa-search" type="submit" value="Search"></button>
+                                </div>
+                            </ul>
+                        </li>
+                        <li id="advsearch">
+                            <a class="drop bgclrprim" id="buttonadvsrch" href="#" style="width: 200px"><span class="fa fa-search-plus"></span>&emsp;Advanced Search</a>
+                            <ul class="row">
+                                <div class="col-sm-12">
+                                    <div class="row input-field advsearch" style="background-color: #fff;height: 2.5rem;border: 1px solid #b7b7b7;">
+                                        <div class="input-field col-md-2">
+                                            <input id="state" type="text" placeholder="state">
+                                        </div>
+                                        <div class="input-field col-md-2">
+                                            <input id="city" type="text" placeholder="city">
+                                        </div>
+                                        <div class="input-field col-md-2">
+                                            <input id="area" type="text" placeholder="area">
+                                        </div>
+                                        <div class="input-field col-md-3">
+                                            <input id="category" type="text" placeholder="category">
+                                        </div>
+                                        <div class="input-field col-md-1">
+                                            <select class="browser-default" style="height: 2.4rem;border: 0px;">
+                                                <option value="" disabled selected>Distance</option>
+                                                <option value="1"> 1 KM</option>
+                                                <option value="2"> 2 KM</option>
+                                                <option value="3"> 3 KM</option>
+                                                <option value="4"> 4 KM</option>
+                                                <option value="5"> 5 KM</option>
+                                                <option value="6"> 10 KM</option>
+                                                <option value="7"> 20 KM</option>
+                                                <option value="8"> 30 KM</option>
+                                                <option value="9"> 40 KM</option>
+                                                <option value="10"> 50 KM & above</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2" style="padding: 0px;margin: 0px;">
+                                            <a href="#" class="waves-effect waves-light btn bgclrprim " style="width: 100%;margin: 0px;height: 2.4rem;">search</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="right">
+                            <a href="#" class="bgclrprim"><img src="images/profile.png" class="circle responsive-img waves-effect waves-light right" style="width: 40px;margin-top: 5px"> </a>
+                        </li>
+                        <li class="right">
+                            <a class="bgclrprim" style="border-width: 0px 2px 0px 2px;"> Total visitors : 300</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        
+        <div class="row">
+            <!-------------first column filters content--------------------->
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-xs-5" style="padding: 0px;">
+                            <img src="images/galleryy.png" style="height: 50px;width: 100%;">
+                        </div>
+                        <div class="col-xs-7">
+                            <span >folder title</span><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------end of  the first column--------------------------->
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-content">
+                        <img class="imagegallery" src="images/gallery1.jpg" alt=""/>
+
+                        <img class="imagegallery" src="images/galleryy.png" alt=""/>
+
+                        <img class="imagegallery" src="images/gallery1.jpg" alt=""/>
+
+                        <img class="imagegallery" src="images/galleryy.png" alt=""/>
+                        <img class="imagegallery" src="images/gallery1.jpg" alt=""/>
+
+                        <img class="imagegallery" src="images/galleryy.png" alt="" />
+
+                        <img class="imagegallery" src="images/gallery1.jpg" alt=""/>
+
+                        <img class="imagegallery" src="images/galleryy.png" alt=""/>
+
+                        <!-- PhotoPopUp Panel -->
+                        <div id="imagepopup" onclick="imagepopup.hideimage2(event);">
+                            <div id="imagepopup_panel"></div>
+                            <div id="imagepopup_load"><img src="http://into.hu/assets/images/loading.gif"></div>
+                            <div id="imagepopup_image1"></div>
+                            <div id="imagepopup_image2"></div>
+                            <div id="imagepopup_prev"  onclick="imagepopup.prev();"><span class="fa fa-chevron-left"></span></div>
+                            <div id="imagepopup_next" onclick="imagepopup.next();"><span class="fa fa-chevron-right"></span></div>
+                            <div id="imagepopup_hide" onclick="imagepopup.hideimage();"><span class="fa fa-close"></span></div>
+                        </div>
+                        <div id="imagepopup_fixer"></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/imagegallery.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+    </body>
+</html>
+
